@@ -2,7 +2,7 @@
 
 Azure Policy カスタム定義 — 各 Storage アカウントに対してリソース単位の **Defender for Storage** が有効化されていることを監査します。
 
-[![Deploy to Azure](https://aka.ms/deploytoazure)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FCheck-DefenderForStorage--ResourceLevel%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FCheck-DefenderForStorage--ResourceLevel%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json)
 
 ---
 
