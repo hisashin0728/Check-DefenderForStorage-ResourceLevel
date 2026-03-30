@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-09-01/policyDefinition.json#",
+  "name": "custom-defender-for-storage-resource-audit",
+  "properties": {
+    "displayName": "[Custom] Defender for Storage - Resource Level Audit",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "各 Storage Account に対して、Defender for Storage がリソース単位（isEnabled: true）で有効化されていることを監査します。",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Security Center"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "AuditIfNotExists または Disabled"
+        },
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "AuditIfNotExists"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "equals": "Microsoft.Storage/storageAccounts"
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.Security/defenderForStorageSettings",
+          "name": "current",
+          "evaluationDelay": "AfterProvisioning",
+          "existenceCondition": {
+            "field": "Microsoft.Security/defenderForStorageSettings/isEnabled",
+            "equals": "true"
+          }
+        }
+      }
+    }
+  }
+}
