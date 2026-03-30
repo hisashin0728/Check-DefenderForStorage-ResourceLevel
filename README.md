@@ -2,9 +2,7 @@
 
 Azure Policy カスタム定義 — 各 Storage アカウントに対してリソース単位の **Defender for Storage** が有効化されていることを監査します。
 
-[![Deploy to Azure](https://aka.ms/deploytoazure)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2F%3Cyour-org%3E%2F%3Cyour-repo%3E%2Fmain%2Fazuredeploy.json)
-
-> **注:** 上記ボタンを使用するには、このリポジトリを GitHub に公開し、URL の `<your-org>` / `<your-repo>` を実際の値に置き換えてください。
+[![Deploy to Azure](https://aka.ms/deploytoazure)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FCheck-DefenderForStorage--ResourceLevel%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json)
 
 ---
 
@@ -53,10 +51,10 @@ Storage アカウントが存在する
 
 #### Deploy to Azure ボタン
 
-GitHub にリポジトリを公開後、以下の URL の `<your-org>` / `<your-repo>` を置き換えてブラウザで開くと、Azure Portal から直接デプロイできます。
+以下のリンクをブラウザで開くと、Azure Portal から直接デプロイできます。
 
 ```
-https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2F<your-org>%2F<your-repo>%2Fmain%2Fazuredeploy.json
+https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FCheck-DefenderForStorage--ResourceLevel%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json
 ```
 
 #### Azure CLI によるデプロイ
